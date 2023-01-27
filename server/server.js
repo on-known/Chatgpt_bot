@@ -4,7 +4,7 @@ import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
 
-dotenv.config()
+dotenv.config({path:'/etc/secrets/.env'})
 
 
 const configuration = new Configuration({
