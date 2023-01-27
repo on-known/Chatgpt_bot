@@ -44,6 +44,9 @@ app.post('/', async (req, res) => {
     } catch (error) {
       console.error(error)
       res.status(500).send(error || 'Something went wrong');
+      console.error(error)
+      res.status(429).send(error || 'Too Many Requests')
+
     }
   })
 
